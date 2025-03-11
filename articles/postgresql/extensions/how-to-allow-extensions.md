@@ -15,7 +15,7 @@ ms.topic: how-to
 
 [!INCLUDE [applies-to-postgresql-flexible-server](~/reusable-content/ce-skilling/azure/includes/postgresql/includes/applies-to-postgresql-flexible-server.md)]
 
-Before creating extensions in Azure Database for PostgreSQL flexible server, you must allowlist them.
+Before creating extensions in Azure Database for PostgreSQL flexible server, you must allow them.
 
 ## Steps to allow extensions
 
@@ -29,9 +29,9 @@ Using the [Azure portal](https://portal.azure.com):
 
     :::image type="content" source="media/how-to-allow-extensions/server-parameters.png" alt-text="Screenshot that shows the Server parameters menu option." lightbox="media/how-to-allow-extensions/server-parameters.png":::
 
-3. Select the extensions that you want to allowlist, from the ones available in the `azure.extensions` parameter.
+3. Select the extensions that you want to allow, from the ones available in the `azure.extensions` parameter.
 
-    :::image type="content" source="media/how-to-allow-extensions/allow-list.png" alt-text="Screenshot that shows how to allowlist some extensions." lightbox="media/how-to-allow-extensions/allow-list.png":::
+    :::image type="content" source="media/how-to-allow-extensions/allow-list.png" alt-text="Screenshot that shows how to allow some extensions." lightbox="media/how-to-allow-extensions/allow-list.png":::
 
 4. Select **Save**.
 
@@ -49,7 +49,7 @@ You can allow extensions via the CLI parameter set [command](/cli/azure/postgres
 
 Using the [ARM Template](/azure/azure-resource-manager/templates/):
 
-The following example adds extensions to the allowlist `dblink`, `dict_xsyn`, `pg_buffercache` on a server whose name is `postgres-test-server`:
+The following example adds extensions to the allow `dblink`, `dict_xsyn`, `pg_buffercache` on a server whose name is `postgres-test-server`:
 
 ```json
 {
